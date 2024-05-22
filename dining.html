@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           background-image: linear-gradient(0.25turn ,#103c4f,#8eb472,#cf9e69);
+        }
+         .box{
+        width: 300px;
+        height: 550px;
+        float:right;
+        border: 5px solid rgb(152, 178, 170);
+        border-style: outset;
+        margin-left: 78%;
+        position: absolute;
+  bottom: 8px;
+  right: 16px;
+       
+     
+        
+        
+
+    }
+    .box ul li{
+        width: 300px;
+        
+        
+        text-align: left;
+
+    }
+    .box ul  li a{text-decoration: none;
+    color: darkgray;}
+    
+    .box ul li a:hover{columns: white;
+    }
+   
+    
+    
+*{
+    font-family: Aclonica;
+    color: white;
+}
+
+h1{
+    font-size: 40px;
+    font-style: oblique;
+    position: relative;
+    
+    
+}
+
+H2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+    
+.slidershow{
+    width: 750px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 18px;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+.bar{
+    width: 20px;
+    height: 8px;
+    border: 1px solid #fff;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar :hover{
+    background: #fff;
+
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    width: 700%;
+    height: 100%;
+    display: flex;
+   
+   
+}
+.slide{
+    width: 20%;
+    transition: 0.6s;
+   
+}
+.slide img{
+    width: 900px;
+    height: 100%;
+    border-radius: 18px;
+
+}
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+    
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+#r6:checked ~ .s1{
+    margin-left: -100%;
+}
+#r7:checked ~ .s1{
+    margin-left: -120%;
+}
+#r8:checked ~ .s1{
+    margin-left: -140%;
+}
+#r9:checked ~ .s1{
+    margin-left: -160%;
+}
+#r10:checked ~ .s1{
+    margin-left: -180%;
+}
+#r11:checked ~ .s1{
+    margin-left: -200%;
+}
+#r12:checked ~ .s1{
+    margin-left: -220%;
+}
+.signin{
+            color: #fff;
+            cursor: pointer;
+            background:rgb(131, 67, 67);
+            max-height: max-content;
+            max-width: max-content;
+            padding: 5px 10px;
+            border-radius: 15px;
+            position: absolute;
+  bottom: 650px;
+  right: 20px;
+  font-size: 30px;
+            
+        }
+
+
+       
+    
+
+    </style>
+</head>
+<body>
+    
+    <H1>Find Your favorite food</H1>
+    <div class="pic-item">
+        <img src="/restaurantweb/images/clip.jpg" width="300px" height="300px"  style="border-radius: 50%;"></div>
+  
+        <div class="signin"><a href="signin.html">Sign In</a></div>
+        <div class="box">
+            <ul type ="none">
+            
+                <ul><h3><a href="signin.html"><li>INDIAN</li></a><BR><br></h3>
+                <h3><a href="signin.html"><LI>CHINESE</LI></a><BR></h3>
+                <h3><a href="signin.html"><LI>JAPANESE</LI></a><BR></h3>
+                <h3><a href="signin.html"><LI>CAFE</LI></a><BR></h3>
+                <h3><a href="signin.html"><LI>ITALIAN</LI></a><BR></h3>
+                <h3><a href="signin.html"><LI>PIZZA</LI></a>
+            </h3>
+            <h3><a href="signin.html"><LI>SEAFOOD</LI></a><BR></h3>
+                <h3><a href="signin.html"><LI>THAI</LI></a><BR></h3>
+                    <h3><a href="signin.html"><LI>BAR</LI></a><BR></h3>
+        </ul></ul>
+            </div>
+    
+        
+        
+        <div class="slidershow middle">
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+                <input type="radio" name="r" id="r5">
+                <input type="radio" name="r" id="r6">
+                <input type="radio" name="r" id="r7">
+                <input type="radio" name="r" id="r8">
+                <input type="radio" name="r" id="r9">
+                <input type="radio" name="r" id="r10">
+                <input type="radio" name="r" id="r11">
+                <input type="radio" name="r" id="r12">
+                
+                <div class="slide s1">
+                    <img src="/restaurantweb/images/indian.jpeg" width=""  alt="">
+                </div>
+                
+                <div class="slide">
+                    <img src="/restaurantweb/images/noodles.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/restaurantweb/images/japanese.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/restaurantweb/images/cold.jpg" alt="">
+                   
+                </div>
+                
+                <div class="slide">
+                    <img src="/restaurantweb/images/IMG_20230522_081007.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/restaurantweb/images/burger.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/restaurantweb/images/thai.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/restaurantweb/images/drinks.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/restaurantweb/images/dessert.png" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="/restaurantweb/images/soups.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/restaurantweb/images/pub (2).png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/restaurantweb/images/chickenb.jpg" alt="">
+                </div>
+                
+    
+    
+    
+            </div>
+            
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+                <label for="r6" class="bar"></label>
+                <label for="r7" class="bar"></label>
+                <label for="r8" class="bar"></label>
+                <label for="r9" class="bar"></label>
+                <label for="r10" class="bar"></label>
+                <label for="r11" class="bar"></label>
+                <label for="r12" class="bar"></label>
+            </div>
+            
+            
+        </div>
+        
+   
+     
+</body>
+</html>
